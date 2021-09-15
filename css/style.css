@@ -1,0 +1,38 @@
+body{
+    background-image: url(../images/pexels-photo-346529.jpeg);
+    margin:2px;
+}
+.navbar{
+    font-size: 20px;
+}
+.text{
+    display:block;
+}
+
+p{
+    font-style: italic;
+    font-size: 3em;
+    text-align: center;
+    margin: 100px;
+}
+
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.footer{
+    background-color: black;
+    padding:30px ;
+    text-align: center;
+    margin-top: 7%;
+}
+
+.icon{
+    display:inline-flex;
+    margin:20px;
+}
+
+.icon>img{
+    margin: 120px;
+}
