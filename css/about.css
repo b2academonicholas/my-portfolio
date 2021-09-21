@@ -1,0 +1,15 @@
+.footer{
+    background-color: black;
+    padding:30px ;
+    text-align: center;
+    margin-top: 7%;
+}
+
+.icon{
+    display:inline-flex;
+    margin:20px;
+}
+
+.icon>img{
+    margin: 120px;
+}
