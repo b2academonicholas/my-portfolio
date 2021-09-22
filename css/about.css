@@ -19,40 +19,19 @@ body{
     float: right;
 }
 
-div.gallery {
-  border: 1px solid #ccc;
+.flex-container{
+  display: flex;
+  flex-wrap: wrap;
 }
 
-div.gallery:hover {
-  border: 1px solid #777;
-}
-
-div.gallery img {
+.flex-item>img{
   width: 100%;
   height: auto;
 }
 
-div.desc {
-  padding: 15px;
-  text-align: center;
+.flex-item{
+  flex: 25%;
 }
-
-
-
-.responsive {
-  padding: 0 6px;
-  float: left;
-  width: 24.99999%;
-}
-
-
-
-.clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
 
 
 .icon{
@@ -92,28 +71,43 @@ color: skyblue;
   margin-top: 7%;
 }
 
-@media only screen and (max-width: 992px) {
-  .responsive{
-    width: 23%;
-    margin: 5px;
-
+@media(max-width:380px) {
+  .flex-item{
+    flex:100%;
   }
-}
   
+}
 
-@media only screen and (max-width: 600px) {
-  .responsive {
-    width: 49.99999%;
-    margin: 6px 0;
+@media(max-width:600px) {
+  .flex-item{
+    flex: 100%;
+  }
+}
+
+@media(max-width:770px){
+  .flex-item{
+    flex: 50%;
+  }
+}
+
+@media(max-width:998px){
+  .flex-item{
+    flex: 25%;
+  }
+} 
     
-  }
-}
+    
+    
+    
+       
+    
+    
+    
 
-@media only screen and (max-width: 380px) {
-  .responsive {
-    width: 100%;
-  }
-  .clearfix>img{
-    max-width: 100%;
-  }
-}
+
+
+
+
+
+
+
