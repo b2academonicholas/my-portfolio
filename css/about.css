@@ -1,38 +1,61 @@
 * {
   box-sizing: border-box;
-  margin: 0px;
-  padding: 0;
 }
 
 body{
-    background-image: url(../images/bh3.png);
-    color:white;
+  background-image: url(../images/bh3.png);
+  color: white;
+  margin: 0;
+  font-family: Arial;
 }
-
-.clearfix{
-  margin-left: 20px;
-  margin-right: 20px;
-}
-
-
 .clearfix>img{
-    float: right;
+  position: relative;
+  float: right;
 }
 
-.flex-container{
+#s1{
+  margin-left: 35px;
+  margin-right: 15px;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.row {
   display: flex;
   flex-wrap: wrap;
+  padding: 0 4px;
 }
 
-.flex-item>img{
-  width: 100%;
-  height: auto;
-}
-
-.flex-item{
+/* Create four equal columns that sits next to each other */
+.column {
   flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
 }
 
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
 
 .icon{
     display:inline-flex;
@@ -66,35 +89,13 @@ color: skyblue;
 
 .footer{
   background-color: skyblue;
-  padding:30px ;
+  padding:30px; 
   text-align: center;
   margin-top: 7%;
+  max-width: 100%;
 }
 
-@media(max-width:380px) {
-  .flex-item{
-    flex:100%;
-  }
-  
-}
-
-@media(max-width:600px) {
-  .flex-item{
-    flex: 100%;
-  }
-}
-
-@media(max-width:770px){
-  .flex-item{
-    flex: 50%;
-  }
-}
-
-@media(max-width:998px){
-  .flex-item{
-    flex: 25%;
-  }
-} 
+   
     
     
     
