@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+  
+/*body{
+    background-image: url(../images/bh3.png);
+}*/
+h1{
+    text-align: center;
+    margin: 300px;
+    color: white;
+}
